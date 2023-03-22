@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #8736fa;
+}
+
+.menu-bar{
+    background: transparent;
+    text-align: right;
+
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active,.menu-bar ul li:hover{
+background-color: crimson;
+border-radius: 0px;
+}
+.sub-menu{
+    display: none;
+
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: rgba(6, 4, 23, 0.349) ;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 15px;
+
+}
+.menu-bar ul li:hover .sub-menu ul li{
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted white;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+    color: crimson;
+}
+
+#div1{
+    background-color: transparent;
+    width: :50%;
+    height: 50;
+    float:left;
+    }
+    
+#div2{
+        *{
+            box-sizing: border-box;
+        }
+        iframe{
+            display: block;
+            width: 30%;
+            max-width: 500px;
+            height: 50%;
+            margin: 0px auto;
+            border: 1px solid #000;
+        }
+       float:right;
+    }
